@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic Concept of Web Technology</title>
+    <h1>Lab 1 - WebProgramming</h1>
+    <p><strong>Author:</strong> Byron Jones
+        <br><strong>Course:</strong> CST8238
+        <br><strong>Date: </strong> January 10th, 2022</p><br>
+</head>
+
+<!-- body -->
+
+<body>
+    <ol>
+        <li>
+            <h3><u>Define HTML</u></h3>
+        </li>
+        <p>HTML is defined as a markup language.
+            <br>A markup language is simply a way of annotating a document in such a way to mkae the annotations distinct from the text being annotated.
+            <br>The term comes from the days of print, when editors would write instructions on manuscript pages that might be revision instructions to the author or copy editor.</br>
+            <li>
+                <h3><u>Define Client-server model of communications.</u></h3>
+            </li>
+            <p>Client-Server Model describes the communication between the server and clients which request resources from the listening server.</p>
+            <li>
+                <h3><u>Write down the names of different types of servers.</u></h3>
+            </li>
+            <ol>
+                <p>
+                    <li>Data Server</li>
+                    <li>Application Server</li>
+                    <li>Authentication Server</li>
+                    <li>Email Server</li>
+                    <li>Web Server</li>
+                    <li>Media Server</li>
+                </p>
+            </ol>
+            <li>
+                <h3><u>Define a Web Server</u></h3>
+            </li>
+            <p>A web server is relates to hardware and/or software working together.
+                <br>Web server hardware stores web server software and the website's component files.
+                <br>Web server software controls how web users access the hosted files.
+            </p>
+            <li>
+                <h3><u>Define Data Centers.</u></h3>
+            </li>
+            <p>Data centers are server farms typically housed in special facilities.
+                <br>They are used to prevent the potential for site down times.
+                <br>As a consequence, the costs for multiple redundant data centers are quite high, and only larger web comapnies can afford this.
+                <br>Most web companies will instead lease space from a third-party center.
+            </p>
+            <li>
+                <h3><u>Why do we need a Uniform Resource Locator(URL)?</u></h3>
+            </li>
+            <p>The reason is to allow clients to request particular resources from the server.
+                <br>Uniform Resource Locator(URL) is the naming mechanism used.
+            </p>
+            <li>
+                <h3><u>Give an example of Uniform Resource Locator (URL) and specify all components of an URL.</u></h3>
+            </li>
+            <p><strong>Example</strong>: http://www.website.com/index.php?page=20#about
+                <ol>
+                    <li>
+                        <strong>Protocol</strong>: </strong><em>http</em>
+                    </li>
+                    <li>
+                        <strong>Domain</strong>: <em>www.website.com</em>
+                    </li>
+                    <li>
+                        <strong>Path</strong>: <em>index.php</em>
+                    </li>
+                    <li>
+                        <strong>Query String</strong>: <em>page=17</em>
+                    </li>
+                    <li>
+                        <strong>Fragment</strong>: <em>about</em>
+                    </li>
+                </ol>
+            </p>
+            <li>
+                <h3><u>What is the difference between a static and a dynamic web  site?</u></h3>
+            </li>
+            <p>A <strong>Static Web Site</strong> consists only of HTML pages that look identical for all users at all times.
+                <br>A <strong>Dynamic Web Site</strong> is when the page content varies between users and is being created at run-time.
+            </p>
+            <li>
+                <h3><u>Why do we need Domain Name System (DNS)?</u></h3>
+            </li>
+            <p>Instead of IP addresses, we use the Domain Name System(DNS).
+            </p>
+            <li>
+                <h3><u>Describe in detail the process of DNS address resolution?</u></h3>
+            </li>
+            <p>This is the process of obtaining the numeric IP address from the domain name.
+                <ol>
+                    <li>Domain name is entered</li>
+                    <li>If IP not in browser's cache, task delegated to OS DNS Resolver</li>
+                    <li>If IP not in DNS cache, resolver requests for IP address to ISP's DNS Server</li>
+                    <li>If primary DNS server doesn't have requested domain in its DNS cache it sends request to root name server</li>
+                    <li>Root name server returns IP of name server for requested TLD</li>
+                    <li>Request IP of name server for domain</li>
+                    <li>.com name server returns IP address of DNS server for domain to Primary DNS server</li>
+                    <li>Primary DNS server request sent for IP address of domain to DNS server</li>
+                    <li>DNS server returns IP address of web server to Primary DNS server</li>
+                    <li>Primary DNS server returns IP address of domain to DNS Resolver</li>
+                    <li>DNS resolver returns IP address of domain to application</li>
+                    <li>Application returns requested page</li>
+                </ol>
+            </p>
+            <li>
+                <h3><u>Give some examples of generic top-Level domains (gTLD).</u></h3>
+            </li>
+            <p>
+                <ul>
+                    <li>.com</li>
+                    <li>.org</li>
+                    <li>.net</li>
+                </ul>
+            </p>
+            <li>
+                <h3><u>Give some examples of country code top-Level domains (ccTLD)</u></h3>
+            </li>
+            <p>
+                <ul>
+                    <li>.ca</li>
+                    <li>.uz</li>
+                    <li>.uk</li>
+                </ul>
+            </p>
+            <li>
+                <h3><u>How can you pass a user's information from the client to the web server?</u></h3>
+            </li>
+            <p>Using a <strong>Query String</strong> is the way of passing information such as user form input from the client to the server.
+                <br>In URL's theyt are encoded as key-value pairs delimited by "&" symbol and preceded by the "?" symbol.
+            </p>
+            <li>
+                <h3><u>How can you pass a user's information from the client to the web server?</u></h3>
+            </li>
+            <p>The HTTP protocol establishes a TCP connection on port 80 (by default).
+            </p>
+            <li>
+                <h3><u>Describe how a single web page is displayed on a web browser.</u></h3>
+            </li>
+            <p>The client's browser requests the initial HTML page, then parses the returned HTML to find all resources referenced within such as images, style sheets and scripts.
+                <br>The page is fully loaded for the user once all files have been retrieved.
+            </p>
+            <li>
+                <h3><u>Give some examples of HTTP request methods.</u></h3>
+            </li>
+            <p>
+                <ul>
+                    <li>POST /FormProcess.php</li>
+                    <li>GET /SomePage.php</li>
+                </ul>
+            </p>
+    </ol>
+</body>
+
+<!-- footer -->
+
+<footer>
+    <div>
+        <p>
+            <small>Referenced Fundamentals of Web Development by Randy Connolly and Ricardo Hoar</small>
+            <br><small>Copyright &copy; 2022 Byron Jones</small>
+        </p>
+    </div>
+</footer>
+
+</html>
