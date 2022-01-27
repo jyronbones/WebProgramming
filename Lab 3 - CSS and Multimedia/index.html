@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSS and Multimedia</title>
+    <link rel="stylesheet" href="css/StyleSheet.css" />
+</head>
+
+<!-- body -->
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <br>
+        <hr>
+        <h1>Computer Engineering Technology - Computing Science</h1>
+        <br><br>
+        <h2>CST8238 - Web Programming</h2>
+        <hr>
+    </div>
+
+    <!-- menu -->
+    <div id="menu">
+        <h2>
+            <a href="index.html">Index</a> <br><br><a href="Multimedia.html">Multimedia</a
+        >
+      </h2>
+    </div>
+
+    <!-- content -->
+    <div id="content">
+      <h2>CSS Question and Answers</h2><br>
+
+      <dl>
+          <dt><h3>What are main benefits of using CSS?</h3></dt>
+          <dd><h4>
+            -CSS offers better control of formatting than the alternative provided in HTML
+            <br>-Websites are more maintainable since all formatting can be centralized into one or few CSS files
+            <br>-Websites that implement CSS are more accessible
+            <br>-Sites that use a centralized set of CSS files for presentations will be quicker since each HTML file will contain less markup
+            <br>-CSS can be used to adopt a page for different output mediums
+          </h4></dd><br><hr>
+      
+          <br><dt><h3>What are different parts of a CSS style rule?</h3></dt>
+          <dd><h4><u>Selector</u>: identifies which element or elements in the HTML document will be affected by the declaration rule
+            <br><u>Property</u>: part of a CSS declaration inwhich a property name is predefined by the CSS standard ie. property type "Fonts" properties are "font", "font-family" etc...
+            <br><u>Value</u>: part of a CSS declaration which is dependent on the property. These can be from a predefined keyword list or others include length measurements, percentages, color values, URLs etc...
+          </h4></dd><br><hr>
+      
+          <br><dt><h3>What is a class selector? Give an example</h3></dt>
+          <dd><h4>A <u>class selector</u> allows for the simultaneous targetting of different HTML elements regardless of the position within a document by using the period (.) and the class name
+            <br><em>Example</em>: 
+            <br>&emsp;&emsp;&emsp;&emsp;&lt;style&gt;
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;.example {
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;width: 500px;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;height: 100px;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;border: 1px solid #000;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}
+              <br>&emsp;&emsp;&emsp;&emsp;&lt;/style&gt;
+              <br><br><div class="example">
+                <p>This rectangle box and contents uses a class selector</p>
+              </div><br>
+          <h4></dd><hr>
+
+          <br><dt><h3>What is an id selector? Give an example</h3></dt>
+          <dd><h4>An <u>id selector</u> allows for the selection of a specific element by its id attribute regardless of type or position and can be targeted for styling by using the id selector with pound/hash (#) and id name
+            <br><em>Example</em>: 
+            <br>&emsp;&emsp;&emsp;&emsp;&lt;style&gt;
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;#example {
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;width: 500px;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;height: 100px;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;border: 1px solid #000;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;font-size: 16pt;
+              <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}
+              <br>&emsp;&emsp;&emsp;&emsp;&lt;/style&gt;
+              <br><br><div id="example">
+                <p>This rectangle box and contents uses a id selector</p>
+              </div><br>
+          </h4></dd><hr>
+
+          <br><dt><h3>What are contextual selectors in CSS? Give an example.</h3></dt>
+          <dd><h4>A <u>contextual selector</u> allows for the selection of a elements based on their ancestors, descendants, or siblings
+            <br><em>Example</em>: 
+            <br>em a:link { background-color: rgb(184, 157, 235); }
+            <br><br><div class="example">
+              <p>
+                <em><a href="https://www.google.com">Google</a></em>
+            <br><em><a href="https://www.youtube.com">YouTube</a></em>
+            <br><em><a href="https://www.yahoo.com">Yahoo</a></em>
+            <br><em><a href="https://www.amazon.com">Amazon</a></em>
+            <br><em><a href="https://www.Netflix.com">Netflix</a></em>
+            </p>
+    </div><br>
+    </h4>
+    </dd>
+    <hr>
+
+    <br><dt><h3>What is an attribute selector? Give an example</h3></dt>
+    <dd>
+        <h4>An <u>attrubute selector</u> allows you to select HTML elements by either presence of an element attribute or by value of an attribute
+            <br><em>Example</em>:
+            <br>&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;[title] {
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;padding-bottom: 5px;
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;border-bottom: 3px dashed red;
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;text-decoration: underline;
+            <br>&emsp;&emsp;&emsp;&emsp;&nbsp;}
+            <br><br>
+            <div class="example">
+                <img src="images/examples/title.png" title="title example" />
+            </div><br>
+        </h4>
+    </dd>
+    <hr>
+
+    <br><dt><h3>What is a pseudo selector? Give an example</h3></dt>
+    <dd>
+        <h4>A <u>pseudo selector</u> is a way to select something that doesn't exist explicitly as an element but still a recognizable selectable object
+            <br><em>Example</em>: a:hover {
+            <br>&emsp;&emsp;&emsp;&emsp;&nbsp;text-decoration: underline;
+            <br>&emsp;&emsp;&emsp;&emsp;&nbsp;color: violet;
+            <br>&emsp;&emsp;&emsp;&emsp;&nbsp;font-weight: bold;
+            <br>&emsp;&emsp;&emsp;&emsp;&nbsp;}
+            <br><br>
+            <div class="example">
+                <p>
+                    <a href="https://www.google.com">Google</a>
+                    <br><a href="https://www.youtube.com">YouTube</a>
+                    <br><a href="https://www.yahoo.com">Yahoo</a>
+                    <br><a href="https://www.amazon.com">Amazon</a>
+                    <br><a href="https://www.Netflix.com">Netflix</a>
+                </p>
+            </div><br>
+        </h4>
+    </dd>
+    <hr>
+
+    <br><dt><h3>What are the three cascade principles used by browsers when style rules conflict?
+            </h3></dt>
+    <dd>
+        <h4><u>Inheritance</u>: CSS properties can affect their descendants as well
+            <br><u>Specificity</u>: is how the browser determines which style rule takes priority when more than one style rule could be applied to the same element
+            <br><u>Location</u>: is used when inheritance and specificity cannot determine style precedence - latest given more weight
+        </h4>
+    </dd><br>
+    <hr>
+    </dl>
+    </div>
+</body>
+
+<!-- footer -->
+
+<footer>
+    <div id="footer">
+        <p>
+            <small>Byron Jones <br />Student Number: 040585687 <br /><a
+            href="mailto:jone0736@algonquinlive.com"
+            >jone0736@algonquinlive.com</a
+          ></small
+        >
+      </p>
+    </div>
+  </footer>
+</html>
