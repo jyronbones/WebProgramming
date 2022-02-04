@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+    <title>Random Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<!-- body -->
+
+<body>
+    <!-- header -->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Computer Engineering Technology - Web Programming</h1>
+
+    </div>
+
+    <!-- menu -->
+    <div class="row">
+        <div class="col-md-2">
+            <nav class="navbar-nav mr-auto navbar-expand-sm bg-dark navbar-dark">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MultiplicationTable.html">Multiplication Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AreaCalculator.html">Area Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Random.html">Random Generator</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- content -->
+        <div class="col-md-10">
+            <p>
+                <script>
+                    var range1 = 0; // numbers in range of 01-10
+                    var range2 = 0; // numbers in range of 11-20
+                    var range3 = 0; // numbers in range of 21-30
+                    var range4 = 0; // numbers in range of 31-40
+                    var range5 = 0; // numbers in range of 41-50
+
+
+                    for (var i = 0; i < 500; i++) { // generates 500 random numbers storing them in the amount in their respective ranges
+                        var random = Math.floor(Math.random() * 50 + 1);
+                        if (random >= 1 && random <= 10) {
+                            range1++;
+                        } else if (random >= 11 && random <= 20) {
+                            range2++;
+                        } else if (random >= 21 && random <= 30) {
+                            range3++;
+                        } else if (random >= 31 && random <= 40) {
+                            range4++;
+                        } else {
+                            range5++;
+                        }
+                    }
+                    document.write(range1 + " number are randomly generated in the range between 01-10<br>")
+                    document.write(range2 + " number are randomly generated in the range between 11-20<br>")
+                    document.write(range3 + " number are randomly generated in the range between 21-30<br>")
+                    document.write(range4 + " number are randomly generated in the range between 31-40<br>")
+                    document.write(range5 + " number are randomly generated in the range between 41-50<br>")
+                    document.write("Histogram of stars as a percentage of the number of values are displayed below")
+
+                    percentNumbersRange1 = range1 * 100 / 500; // percent of numbers in range of 01-10
+                    percentNumbersRange2 = range2 * 100 / 500; // percent of numbers in range of 11-20
+                    percentNumbersRange3 = range3 * 100 / 500; // percent of numbers in range of 21-30
+                    percentNumbersRange4 = range4 * 100 / 500; // percent of numbers in range of 31-40
+                    percentNumbersRange5 = range5 * 100 / 500; // percent of numbers in range of 41-50
+
+                    document.write("<br>01 - 10: ")
+                    for (var i = 0; i < percentNumbersRange1; i++) { // prints a series of stars representing the percentage of numbers in range 01-10
+                        document.write("*")
+                    }
+
+                    document.write("<br>11 - 20: ")
+                    for (var i = 0; i < percentNumbersRange2; i++) { // prints a series of stars representing the percentage of numbers in range 11-20
+                        document.write("*")
+                    }
+
+                    document.write("<br>21 - 30: ")
+                    for (var i = 0; i < percentNumbersRange3; i++) { // prints a series of stars representing the percentage of numbers in range 21-30
+                        document.write("*")
+                    }
+
+                    document.write("<br>31 - 40: ")
+                    for (var i = 0; i < percentNumbersRange4; i++) { // prints a series of stars representing the percentage of numbers in range 31-40
+                        document.write("*")
+                    }
+
+                    document.write("<br>41 - 50: ")
+                    for (var i = 0; i < percentNumbersRange5; i++) { // prints a series of stars representing the percentage of numbers in range 41-50
+                        document.write("*")
+                    }
+                </script>
+            </p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>
+            040585687
+            <br>Byron Jones
+            <br><a href="mailto:jone0736@algonquinlive.com">jone0736@algonquinlive.com</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

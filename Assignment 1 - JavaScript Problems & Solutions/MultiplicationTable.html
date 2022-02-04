@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+    <title>MultiplicationTable</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<!-- body -->
+
+<body>
+    <!-- header -->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Computer Engineering Technology - Web Programming</h1>
+    </div>
+
+    <!-- menu -->
+    <div class="row">
+        <div class="col-md-2">
+            <nav class="navbar-nav mr-auto navbar-expand-sm bg-dark navbar-dark">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MultiplicationTable.html">Multiplication Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AreaCalculator.html">Area Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Random.html">Random Generator</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- content -->
+        <div class="col-md-10">
+            <p>
+                <script>
+                    for (var i = 1; i <= 10; i++) { // outer loop to multiply by inner loop for multiplication table
+                        for (var j = 1; j <= 10; j++) { // inner loop to multiply by outer loop for multiplication table
+                            document.write(i * j + " ");
+                        }
+                        document.write("<br><br>");
+                    }
+                </script>
+            </p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>
+            040585687
+            <br>Byron Jones
+            <br><a href="mailto:jone0736@algonquinlive.com">jone0736@algonquinlive.com</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
