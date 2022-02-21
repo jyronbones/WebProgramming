@@ -1,0 +1,105 @@
+* {
+    font: Times;
+    margin: 0;
+}
+
+/* unvisited link */
+
+a:link {
+    color: lightblue;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: purple;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: violet;
+    font-weight: bold;
+}
+
+
+/* selected link */
+
+a:active {
+    color: transparent;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 99.5%;
+    height: 21.5%;
+    background-color: black;
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+    border: 5px grey solid;
+}
+
+#menu {
+    position: fixed;
+    top: 22.5%;
+    width: 10%;
+    height: 67%;
+    background-color: black;
+    font-size: 18;
+    color: white;
+    padding-top: 5px;
+    padding-left: 3%;
+    border: 5px grey solid;
+}
+
+#content {
+    position: fixed;
+    top: 22%;
+    width: 86.5%;
+    height: 65.5%;
+    font-size: 14;
+    color: black;
+    padding-top: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 15%;
+    margin-top: 3%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 99.5%;
+    height: 8.8%;
+    background-color: black;
+    font-size: 14;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    border: 5px grey solid;
+}
+
+table {
+	width: 270px;
+	border: 1px solid black;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+.col1 {
+	height: 30px;
+	width: 30px;
+	background-color: white;
+}
+.col2 {
+	height: 30px;
+	width: 30px;
+	background-color: black;
+}
