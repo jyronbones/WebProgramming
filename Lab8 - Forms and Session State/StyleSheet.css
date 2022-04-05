@@ -1,0 +1,91 @@
+* {
+    font: Times;
+    margin: 0;
+}
+
+/* unvisited link */
+
+a:link {
+    color: lightblue;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: purple;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: violet;
+    font-weight: bold;
+}
+
+
+/* selected link */
+
+a:active {
+    color: transparent;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 99.5%;
+    height: 21.5%;
+    background-color: black;
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+    border: 5px grey solid;
+}
+
+#menu {
+    position: fixed;
+    top: 22.2%;
+    width: 10%;
+    height: 67%;
+    background-color: black;
+    font-size: 14;
+    color: white;
+    padding-top: 5px;
+    padding-left: 3%;
+    border: 5px grey solid;
+}
+
+#content {
+    position: fixed;
+    top: 23%;
+    bottom: 11%;
+    width: 83%;
+    background-color: white;
+    font-size: 14;
+    color: black;
+    padding-top: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border: 0px grey solid;
+    left: 14%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 99.5%;
+    height: 8.8%;
+    background-color: black;
+    font-size: 14;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    border: 5px grey solid;
+}
+
+fieldset { 
+	border:0px;
+	}
